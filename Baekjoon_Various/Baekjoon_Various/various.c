@@ -5,6 +5,7 @@
 백준 이것저것
 */
 
+// 숫자의 합
 void num11720() {
 	int number, i, result = 0;
 	char number2[100];
@@ -19,6 +20,7 @@ void num11720() {
 	return 0;
  }
 
+// 별찍기 7
 void num2444() {
 	/*
 	#include <iostream>
@@ -50,5 +52,25 @@ int main(int argc, char *argv[])
  
    return 0; 
 }*/
+}
+
+
+void num() {
+    int num1;
+    int num2;
+    char s1[21] = { NULL };
+    scanf_s("%d", &num1);
+
+    for (int i = 0; i < num1; i++) {
+        scanf_s("%d %s", &num2, s1);
+
+        for (int k = 0; s1[k] != NULL; k++) {
+            for (int j = 0; j < num2; j++) {
+                printf("%c", s1[k]);
+            }
+        }
+        printf("\n");
+    }
+    return 0;
 }
 
