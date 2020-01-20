@@ -7,30 +7,52 @@
 // 입출력
 void num2557() {
 	printf("Hello World!");
-	return 0;
 }
 
 void num10718() {
-	printf("강한친구 대한육군\n강한친구 대한육군");
-	return 0;
+    printf("강한친구 대한육군\n강한친구 대한육군");
 }
 
 void num10171() {
 	printf("\\    /\\ \n )  ( ')\n(  /  )\n \\(__)|\n");
-	return 0;
+}
+
+void num10172() {
+    printf("|\\_/|\n|q p|   /}\n( 0 )\"\"\"\\ \n|\"^\"`    |\n||_/=\\\\__| ");
+}
+
+void num1000() {
+    int A;
+    int B;
+    scanf_s("%d\n", &A);
+    scanf_s("%d\n", &B);
+    printf("%d\n" , A + B);
 }
 
 void num10869() {
     int a;
     int b;
-    scanf("%d\n", &a);
-    scanf("%d\n", &b);
+    scanf_s("%d\n", &a);
+    scanf_s("%d\n", &b);
     printf("%d\n", a + b);
     printf("%d\n", a - b);
     printf("%d\n", a * b);
     printf("%d\n", a / b);
     printf("%d\n", a % b);
-    return 0;
+}
+
+void num10430() {
+       int A, B, C;
+
+        scanf("%d %d %d", &A, &B, &C);
+
+        printf("%d\n", (A + B) % C);
+
+        printf("%d\n", (A % C + B % C) % C);
+
+        printf("%d\n", (A * B) % C);
+
+        printf("%d\n", (A % C * B % C) % C);
 }
 
 // if문
@@ -38,8 +60,8 @@ void num10869() {
 void num1330() {
     int A;
     int B;
-    scanf("%d", &A);
-    scanf("%d", &B);
+    scanf_s("%d", &A);
+    scanf_s("%d", &B);
     if (A > B) {
         printf(">");
     }
@@ -49,12 +71,11 @@ void num1330() {
     if (A == B) {
         printf("==");
     }
-    return 0;
 }
 
 void num9498() {
     int score;
-    scanf("%d", &score);
+    scanf_s("%d", &score);
     if (score <= 100 && score >= 90) {
         printf("A");
     }
@@ -71,12 +92,11 @@ void num9498() {
         printf("F");
     }
 
-    return 0;
 }
 
 void num2884() {
     int a, b;
-    scanf("%d %d", &a, &b);
+    scanf_s("%d %d", &a, &b);
     if (b < 45)
     {
         b += 60;
@@ -90,7 +110,7 @@ void num2884() {
 
 void num2739() {
     int N = 0, i = 0;
-    scanf("%d", &N);
+    scanf_s("%d", &N);
     if (N < 1 && N > 9) {
         printf("1 ~ 9 사이의 정수값을 입력하세요\n");
     }
@@ -100,5 +120,9 @@ void num2739() {
             printf("%d * %d = %d\n", N, i, N * i);
         }
     }
+}
+
+int main() {
+
     return 0;
 }
