@@ -140,3 +140,21 @@ int main() {
     void num2753();
     return 0;
 }
+
+// 별찍기 5
+#include<stdio.h>
+int main() {
+	int i, j,k,n;
+	scanf("%d", &n);
+	for (i = 0; i < n; i++) {
+		k = 2 * i + 1; //별의 갯수는 행*2 + 1 개.
+		for (j = 0; j < 2*n-1; j++) {
+			if (j < (2*n-1 - k) / 2)  // 예시를 보고 빈공간의 수를 파악
+				printf(" ");
+		}
+		for (j = 0; j < k; j++) { //별의 갯수만큼 출력 
+			printf("*");
+		}
+		printf("\n");
+	}
+}
